@@ -16,6 +16,8 @@ pipline{
     stage("deploy"){
     steps{
      echo 'deployee the application------'
+     
+     git credentialsId: 'mypipline', url: 'https://github.com/shubham02kadam/my-pipline.git'
     }
   }
   }
